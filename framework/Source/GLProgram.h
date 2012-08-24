@@ -1,3 +1,61 @@
+#if defined(__QNX__)
+#ifndef GLPROGRAM_H
+#define GLPROGRAM_H
+
+#include <QObject>
+
+#include <QList>
+
+#include <EGL/egl.h>
+#include <GLES2/gl2.h>
+#include <GLES2/gl2ext.h>
+
+class GLProgram : QObject
+{
+	Q_OBJECT
+
+	Q_PROPERTY(bool initialized READ initialized WRITE setInitialized FINAL)
+
+public:
+	enum Type
+	{
+		VertStringFragString,
+		VertStringFragFile,
+		VertFileFragFile
+	};
+
+	GLProgram(const QString& vShader, const QString& fShader, Type paramType = GLProgram::VertStringFragString);
+	virtual ~GLProgram();
+
+	bool initialized() const;
+	void setInitialized(bool initialized);
+
+	void addAttribute(const QString& attributeName);
+	GLuint attributeIndex(const QString& attributeName);
+	GLuint uniformIndex(const QString& uniformName);
+
+	bool link();
+	void use();
+	void validate();
+
+	const QString vertexShaderLog();
+	const QString fragmentShaderLog();
+	const QString programLog();
+
+protected:
+	QList<QString> attributes;
+	QList<QString> uniforms;
+	GLuint program, vertShader, fragShader;
+
+private:
+	/*! @cond PRIVATE */
+	bool _initialized;
+
+	Q_DISABLE_COPY(GLProgram)
+	/*! @endcond */
+};
+#endif
+#else
 //  This is Jeff LaMarche's GLProgram OpenGL shader wrapper class from his OpenGL ES 2.0 book.
 //  A description of this can be found at his page on the topic:
 //  http://iphonedevelopment.blogspot.com/2010/11/opengl-es-20-for-ios-chapter-4.html
@@ -34,3 +92,4 @@
 - (NSString *)programLog;
 - (void)validate;
 @end
+#endif
