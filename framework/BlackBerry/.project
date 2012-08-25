@@ -112,6 +112,16 @@
 			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImage.h</locationURI>
 		</link>
 		<link>
+			<name>GPUImage/GPUImageInput.h</name>
+			<type>1</type>
+			<location>C:/ndk-workspace/GPUImage/framework/Source/GPUImageInput.h</location>
+		</link>
+		<link>
+			<name>GPUImage/GPUImageOpenGLESContext.cpp</name>
+			<type>1</type>
+			<location>C:/ndk-workspace/GPUImage/framework/Source/GPUImageOpenGLESContext.cpp</location>
+		</link>
+		<link>
 			<name>GPUImage/GPUImageOpenGLESContext.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageOpenGLESContext.h</locationURI>
@@ -145,6 +155,1256 @@
 			<name>GPUImage/Sources</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/GPUImage3x3TextureSamplingFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImage3x3TextureSamplingFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/GPUImage3x3TextureSamplingFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImage3x3TextureSamplingFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/GPUImageBuffer.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageBuffer.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/GPUImageBuffer.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageBuffer.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/GPUImageFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/GPUImageFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/GPUImageFilterGroup.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageFilterGroup.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/GPUImageFilterGroup.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageFilterGroup.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/GPUImageTwoInputFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageTwoInputFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/GPUImageTwoInputFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageTwoInputFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/GPUImageTwoPassFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageTwoPassFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/GPUImageTwoPassFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageTwoPassFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/GPUImageTwoPassTextureSamplingFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageTwoPassTextureSamplingFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/GPUImageTwoPassTextureSamplingFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageTwoPassTextureSamplingFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Outputs/GPUImageMovieWriter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMovieWriter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Outputs/GPUImageMovieWriter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMovieWriter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Outputs/GPUImageRawDataOutput.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageRawDataOutput.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Outputs/GPUImageRawDataOutput.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageRawDataOutput.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Outputs/GPUImageTextureOutput.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageTextureOutput.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Outputs/GPUImageTextureOutput.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageTextureOutput.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Outputs/GPUImageView.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageView.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Outputs/GPUImageView.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageView.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Pipeline/GPUImageFilterPipeline.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageFilterPipeline.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Pipeline/GPUImageFilterPipeline.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageFilterPipeline.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Sources/GPUImageMovie.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMovie.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Sources/GPUImageMovie.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMovie.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Sources/GPUImagePicture.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImagePicture.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Sources/GPUImagePicture.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImagePicture.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Sources/GPUImageRawDataInput.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageRawDataInput.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Sources/GPUImageRawDataInput.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageRawDataInput.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Sources/GPUImageStillCamera.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageStillCamera.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Sources/GPUImageStillCamera.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageStillCamera.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Sources/GPUImageTextureInput.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageTextureInput.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Sources/GPUImageTextureInput.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageTextureInput.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Sources/GPUImageUIElement.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageUIElement.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Sources/GPUImageUIElement.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageUIElement.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Sources/GPUImageVideoCamera.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageVideoCamera.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Sources/GPUImageVideoCamera.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageVideoCamera.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageAddBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageAddBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageAddBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageAddBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageAlphaBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageAlphaBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageAlphaBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageAlphaBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageChromaKeyBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageChromaKeyBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageChromaKeyBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageChromaKeyBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageColorBurnBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageColorBurnBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageColorBurnBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageColorBurnBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageColorDodgeBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageColorDodgeBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageColorDodgeBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageColorDodgeBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageDarkenBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageDarkenBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageDarkenBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageDarkenBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageDifferenceBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageDifferenceBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageDifferenceBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageDifferenceBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageDissolveBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageDissolveBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageDissolveBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageDissolveBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageDivideBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageDivideBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageDivideBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageDivideBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageExclusionBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageExclusionBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageExclusionBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageExclusionBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageHardLightBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageHardLightBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageHardLightBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageHardLightBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageLightenBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageLightenBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageLightenBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageLightenBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageMultiplyBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMultiplyBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageMultiplyBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMultiplyBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageOverlayBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageOverlayBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageOverlayBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageOverlayBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageScreenBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageScreenBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageScreenBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageScreenBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageSoftLightBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSoftLightBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageSoftLightBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSoftLightBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageSourceOverBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSourceOverBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageSourceOverBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSourceOverBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageSubtractBlendFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSubtractBlendFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Blends/GPUImageSubtractBlendFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSubtractBlendFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageAdaptiveThresholdFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageAdaptiveThresholdFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageAdaptiveThresholdFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageAdaptiveThresholdFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageAmatorkaFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageAmatorkaFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageAmatorkaFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageAmatorkaFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageBrightnessFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageBrightnessFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageBrightnessFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageBrightnessFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageColorInvertFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageColorInvertFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageColorInvertFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageColorInvertFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageColorMatrixFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageColorMatrixFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageColorMatrixFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageColorMatrixFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageContrastFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageContrastFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageContrastFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageContrastFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageExposureFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageExposureFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageExposureFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageExposureFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageFalseColorFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageFalseColorFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageFalseColorFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageFalseColorFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageGammaFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageGammaFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageGammaFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageGammaFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageGrayscaleFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageGrayscaleFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageGrayscaleFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageGrayscaleFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageHazeFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageHazeFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageHazeFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageHazeFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageHighlightShadowFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageHighlightShadowFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageHighlightShadowFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageHighlightShadowFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageHistogramFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageHistogramFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageHistogramFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageHistogramFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageHistogramGenerator.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageHistogramGenerator.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageHistogramGenerator.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageHistogramGenerator.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageHueFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageHueFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageHueFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageHueFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageLookupFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageLookupFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageLookupFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageLookupFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageLuminanceThresholdFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageLuminanceThresholdFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageLuminanceThresholdFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageLuminanceThresholdFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageMissEtikateFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMissEtikateFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageMissEtikateFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMissEtikateFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageMonochromeFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMonochromeFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageMonochromeFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMonochromeFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageOpacityFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageOpacityFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageOpacityFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageOpacityFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageRGBFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageRGBFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageRGBFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageRGBFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageSaturationFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSaturationFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageSaturationFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSaturationFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageSepiaFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSepiaFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageSepiaFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSepiaFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageSoftEleganceFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSoftEleganceFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageSoftEleganceFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSoftEleganceFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageToneCurveFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageToneCurveFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageToneCurveFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageToneCurveFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageBulgeDistortionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageBulgeDistortionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageBulgeDistortionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageBulgeDistortionFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageCGAColorspaceFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageCGAColorspaceFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageCGAColorspaceFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageCGAColorspaceFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageCrosshatchFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageCrosshatchFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageCrosshatchFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageCrosshatchFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageEmbossFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageEmbossFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageEmbossFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageEmbossFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageGlassSphereFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageGlassSphereFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageGlassSphereFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageGlassSphereFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageJFAVoroniFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageJFAVoroniFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageJFAVoroniFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageJFAVoroniFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageKuwaharaFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageKuwaharaFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageKuwaharaFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageKuwaharaFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageMaskFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMaskFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageMaskFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMaskFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageMosaicFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMosaicFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageMosaicFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMosaicFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImagePerlinNoiseFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImagePerlinNoiseFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImagePerlinNoiseFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImagePerlinNoiseFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImagePinchDistortionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImagePinchDistortionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImagePinchDistortionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImagePinchDistortionFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImagePixellateFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImagePixellateFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImagePixellateFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImagePixellateFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImagePolarPixellateFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImagePolarPixellateFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImagePolarPixellateFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImagePolarPixellateFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImagePolkaDotFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImagePolkaDotFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImagePolkaDotFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImagePolkaDotFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImagePosterizeFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImagePosterizeFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImagePosterizeFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImagePosterizeFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageSketchFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSketchFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageSketchFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSketchFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageSmoothToonFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSmoothToonFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageSmoothToonFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSmoothToonFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageSphereRefractionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSphereRefractionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageSphereRefractionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSphereRefractionFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageStretchDistortionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageStretchDistortionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageStretchDistortionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageStretchDistortionFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageSwirlFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSwirlFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageSwirlFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSwirlFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageToonFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageToonFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageToonFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageToonFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageVignetteFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageVignetteFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageVignetteFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageVignetteFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageVoroniConsumerFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageVoroniConsumerFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Effects/GPUImageVoroniConsumerFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageVoroniConsumerFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImage3x3ConvolutionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImage3x3ConvolutionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImage3x3ConvolutionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImage3x3ConvolutionFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageBilateralFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageBilateralFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageBilateralFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageBilateralFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageBoxBlurFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageBoxBlurFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageBoxBlurFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageBoxBlurFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageCannyEdgeDetectionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageCannyEdgeDetectionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageCannyEdgeDetectionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageCannyEdgeDetectionFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageClosingFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageClosingFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageClosingFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageClosingFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageColorPackingFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageColorPackingFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageColorPackingFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageColorPackingFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageCropFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageCropFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageCropFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageCropFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageCrosshairGenerator.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageCrosshairGenerator.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageCrosshairGenerator.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageCrosshairGenerator.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageDilationFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageDilationFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageDilationFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageDilationFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageDirectionalNonMaximumSuppressionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageDirectionalNonMaximumSuppressionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageDirectionalNonMaximumSuppressionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageDirectionalNonMaximumSuppressionFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageErosionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageErosionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageErosionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageErosionFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageFastBlurFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageFastBlurFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageFastBlurFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageFastBlurFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageGaussianBlurFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageGaussianBlurFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageGaussianBlurFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageGaussianBlurFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageGaussianSelectiveBlurFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageGaussianSelectiveBlurFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageGaussianSelectiveBlurFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageGaussianSelectiveBlurFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageHarrisCornerDetectionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageHarrisCornerDetectionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageHarrisCornerDetectionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageHarrisCornerDetectionFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageLanczosResamplingFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageLanczosResamplingFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageLanczosResamplingFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageLanczosResamplingFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageLocalBinaryPatternFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageLocalBinaryPatternFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageLocalBinaryPatternFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageLocalBinaryPatternFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageMedianFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMedianFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageMedianFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMedianFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageNobleCornerDetectionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageNobleCornerDetectionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageNobleCornerDetectionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageNobleCornerDetectionFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageNonMaximumSuppressionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageNonMaximumSuppressionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageNonMaximumSuppressionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageNonMaximumSuppressionFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageOpeningFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageOpeningFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageOpeningFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageOpeningFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImagePrewittEdgeDetectionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImagePrewittEdgeDetectionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImagePrewittEdgeDetectionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImagePrewittEdgeDetectionFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageRGBClosingFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageRGBClosingFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageRGBClosingFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageRGBClosingFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageRGBDilationFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageRGBDilationFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageRGBDilationFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageRGBDilationFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageRGBErosionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageRGBErosionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageRGBErosionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageRGBErosionFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageRGBOpeningFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageRGBOpeningFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageRGBOpeningFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageRGBOpeningFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageSharpenFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSharpenFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageSharpenFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSharpenFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageShiTomasiFeatureDetectionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageShiTomasiFeatureDetectionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageShiTomasiFeatureDetectionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageShiTomasiFeatureDetectionFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageSingleComponentFastBlurFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSingleComponentFastBlurFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageSingleComponentFastBlurFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSingleComponentFastBlurFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageSingleComponentGaussianBlurFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSingleComponentGaussianBlurFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageSingleComponentGaussianBlurFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSingleComponentGaussianBlurFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageSobelEdgeDetectionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSobelEdgeDetectionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageSobelEdgeDetectionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSobelEdgeDetectionFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageThresholdEdgeDetection.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageThresholdEdgeDetection.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageThresholdEdgeDetection.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageThresholdEdgeDetection.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageTiltShiftFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageTiltShiftFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageTiltShiftFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageTiltShiftFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageTransformFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageTransformFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageTransformFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageTransformFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageUnsharpMaskFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageUnsharpMaskFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageUnsharpMaskFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageUnsharpMaskFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageWeakPixelInclusionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageWeakPixelInclusionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageWeakPixelInclusionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageWeakPixelInclusionFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageXYDerivativeFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageXYDerivativeFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUImageXYDerivativeFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageXYDerivativeFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUimageDirectionalSobelEdgeDetectionFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUimageDirectionalSobelEdgeDetectionFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Image processing/GPUimageDirectionalSobelEdgeDetectionFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUimageDirectionalSobelEdgeDetectionFilter.m</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

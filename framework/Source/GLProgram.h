@@ -1,4 +1,5 @@
-#if defined(__QNX__)
+#if defined(Q_OS_BLACKBERRY)
+
 #ifndef GLPROGRAM_H
 #define GLPROGRAM_H
 
@@ -10,7 +11,7 @@
 #include <GLES2/gl2.h>
 #include <GLES2/gl2ext.h>
 
-class GLProgram : QObject
+class GLProgram : public QObject
 {
 	Q_OBJECT
 
@@ -65,22 +66,22 @@ private:
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
 
-@interface GLProgram : NSObject 
+@interface GLProgram : NSObject
 {
     NSMutableArray  *attributes;
     NSMutableArray  *uniforms;
     GLuint          program,
-	vertShader, 
-	fragShader;	
+	vertShader,
+	fragShader;
 }
 
 @property(readwrite, nonatomic) BOOL initialized;
 
-- (id)initWithVertexShaderString:(NSString *)vShaderString 
+- (id)initWithVertexShaderString:(NSString *)vShaderString
             fragmentShaderString:(NSString *)fShaderString;
-- (id)initWithVertexShaderString:(NSString *)vShaderString 
+- (id)initWithVertexShaderString:(NSString *)vShaderString
           fragmentShaderFilename:(NSString *)fShaderFilename;
-- (id)initWithVertexShaderFilename:(NSString *)vShaderFilename 
+- (id)initWithVertexShaderFilename:(NSString *)vShaderFilename
             fragmentShaderFilename:(NSString *)fShaderFilename;
 - (void)addAttribute:(NSString *)attributeName;
 - (GLuint)attributeIndex:(NSString *)attributeName;

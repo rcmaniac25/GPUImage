@@ -4,7 +4,7 @@ TARGET = GPUImage
 CONFIG += qt warn_on debug_and_release cascades staticlib
 
 SOURCES += ../../Source/*.cpp
-HEADERS += ../../Source/*.hpp ../../Source/*.h
+HEADERS += ../../Source/*.hpp ../../Source/*.h ../Helper/*.h
 
 device {
 	CONFIG(release, debug|release) {

@@ -1,4 +1,4 @@
-#if defined(__QNX__)
+#if defined(Q_OS_BLACKBERRY)
 #include "GLProgram.h"
 
 #include <QDebug>
