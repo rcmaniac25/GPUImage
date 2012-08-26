@@ -1,3 +1,13 @@
+#if defined(Q_OS_BLACKBERRY)
+
+#ifndef GPUIMAGEOUTPUT_H
+#define GPUIMAGEOUTPUT_H
+
+#include "GPUImageOpenGLESContext.h"
+
+//TODO
+#endif
+#else
 #import <UIKit/UIKit.h>
 
 #import "GPUImageOpenGLESContext.h"
@@ -107,3 +117,4 @@ void report_memory(NSString *tag);
 - (void)prepareForImageCapture;
 
 @end
+#endif

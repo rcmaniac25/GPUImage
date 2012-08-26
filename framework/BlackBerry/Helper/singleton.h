@@ -32,7 +32,6 @@ private:
 };
 
 template<class T> QScopedPointer<T> Singleton<T>::tptr(0);
-template<class T> QBasicAtomicInt Singleton<T>::flag
-                            = Q_BASIC_ATOMIC_INITIALIZER(CallOnce::CO_Request);
+template<class T> QBasicAtomicInt Singleton<T>::flag = Q_BASIC_ATOMIC_INITIALIZER(CallOnce::CO_Request);
 
 #endif // SINGLETON_H

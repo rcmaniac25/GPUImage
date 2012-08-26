@@ -13,12 +13,14 @@ typedef enum { kGPUImageNoRotation, kGPUImageRotateLeft, kGPUImageRotateRight, k
 #include <QSizeF>
 #include <QHash>
 
+#include "GLContext.h"
+
 class GPUImageOpenGLESContext : public QObject
 {
 	Q_OBJECT
 
 public:
-	EGLContext context();
+	GLContext* context();
 	const QThreadPool& contextQueue() const;
 	GLProgram* currentShaderProgram() const;
 	void setCurrentShaderProgram(GLProgram* program);
@@ -34,15 +36,12 @@ public:
 	void presentBufferForDisplay();
 	GLProgram* programForVertexShaderString(const QString& vertexShaderString, const QString& fragmentShaderString);
 
-	// Manage fast texture upload
-	static bool supportsFastTextureUpload();
-
-private:
-	/*! @cond PRIVATE */
 	GPUImageOpenGLESContext();
 	~GPUImageOpenGLESContext();
 
-	EGLContext _context;
+private:
+	/*! @cond PRIVATE */
+	GLContext* _context;
 	QThreadPool _contextQueue;
 	GLProgram* _currentShaderProgram;
 
@@ -51,6 +50,27 @@ private:
 	Q_DISABLE_COPY(GPUImageOpenGLESContext)
 	/*! @endcond */
 };
+QML_DECLARE_TYPE(GPUImageOpenGLESContext)
+
+#include <QTime>
+
+class GPUImageInput
+{
+public:
+	GPUImageInput(){}
+	virtual ~GPUImageInput(){}
+
+    virtual void newFrameReadyAtTime(const QTime& frameTime, int textureIndex) = 0; //QTime isn't really the best choice. Originally CMTime
+    virtual void setInputTexture(GLuint newInputTexture, int textureIndex) = 0;
+    virtual int nextAvailableTextureIndex() = 0;
+    virtual void setInputSize(const QSizeF& newSize, int textureIndex) = 0;
+    virtual void setInputRotation(GPUImageRotationMode newInputRotation, int textureIndex) = 0;
+    virtual QSizeF maximumOutputSize() = 0;
+    virtual void endProcessing() = 0;
+    virtual bool shouldIgnoreUpdatesToThisTarget() = 0;
+    virtual bool enabled() = 0;
+};
+Q_DECLARE_INTERFACE(GPUImageInput, "GPUImage.GPUImageInput_BlackBerry/1.0")
 #endif
 #else
 #import <Foundation/Foundation.h>

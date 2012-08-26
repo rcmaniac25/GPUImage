@@ -97,6 +97,16 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>GPUImage/GLContext.cpp</name>
+			<type>1</type>
+			<location>C:/ndk-workspace/GPUImage/framework/Source/GLContext.cpp</location>
+		</link>
+		<link>
+			<name>GPUImage/GLContext.h</name>
+			<type>1</type>
+			<location>C:/ndk-workspace/GPUImage/framework/Source/GLContext.h</location>
+		</link>
+		<link>
 			<name>GPUImage/GLProgram.cpp</name>
 			<type>1</type>
 			<location>C:/ndk-workspace/GPUImage/framework/Source/GLProgram.cpp</location>
@@ -112,11 +122,6 @@
 			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImage.h</locationURI>
 		</link>
 		<link>
-			<name>GPUImage/GPUImageInput.h</name>
-			<type>1</type>
-			<location>C:/ndk-workspace/GPUImage/framework/Source/GPUImageInput.h</location>
-		</link>
-		<link>
 			<name>GPUImage/GPUImageOpenGLESContext.cpp</name>
 			<type>1</type>
 			<location>C:/ndk-workspace/GPUImage/framework/Source/GPUImageOpenGLESContext.cpp</location>
@@ -125,11 +130,6 @@
 			<name>GPUImage/GPUImageOpenGLESContext.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageOpenGLESContext.h</locationURI>
-		</link>
-		<link>
-			<name>GPUImage/GPUImageOpenGLESContext.m</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageOpenGLESContext.m</locationURI>
 		</link>
 		<link>
 			<name>GPUImage/GPUImageOutput.h</name>

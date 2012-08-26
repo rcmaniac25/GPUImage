@@ -5,6 +5,7 @@
 
 #include <QObject>
 
+#include <qdeclarative.h>
 #include <QList>
 
 #include <EGL/egl.h>
@@ -55,6 +56,7 @@ private:
 	Q_DISABLE_COPY(GLProgram)
 	/*! @endcond */
 };
+QML_DECLARE_TYPE(GLProgram)
 #endif
 #else
 //  This is Jeff LaMarche's GLProgram OpenGL shader wrapper class from his OpenGL ES 2.0 book.
