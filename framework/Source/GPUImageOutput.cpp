@@ -1,0 +1,188 @@
+#include "GPUImageOutput.h"
+
+#include <QCoreApplication>
+
+__BEGIN_DECLS
+
+void runOnMainQueueWithoutDeadlocking(QRunnable* block)
+{
+	if(QCoreApplication::instance())
+	{
+		const QThread* thread = QCoreApplication::instance()->thread();
+		if(QThread::currentThread() == thread)
+		{
+			block->run();
+			if(block->autoDelete())
+			{
+				delete block;
+			}
+		}
+		else
+		{
+			//TODO
+		}
+	}
+	else
+	{
+		//TODO: What should we do? There is no "application"
+	}
+}
+
+void runSynchronouslyOnVideoProcessingQueue(QRunnable* block)
+{
+	const QThreadPool& videoProcessingQueue = GPUImageOpenGLESContext::sharedOpenGLESQueue();
+	//TODO
+}
+
+void report_memory(QString* tag)
+{
+	const QString& tags = tag ? *tag : "Default";
+	//TODO
+}
+
+__END_DECLS
+
+GPUImageOutput::GPUImageOutput() : _targets(), targetTextureIndices(), outputTexture(0), inputTextureSize(), cachedMaximumOutputSize(), forcedMaximumSize(), _shouldSmoothlyScaleOutput(false),
+	_shouldIgnoreUpdatesToThisTarget(false), _audioEncodingTarget(NULL), _targetToIgnoreForUpdates(NULL), _frameProcessingCompletionBlock(NULL), _enabled(true)
+{
+	initializeOutputTexture();
+}
+
+GPUImageOutput::~GPUImageOutput()
+{
+	removeAllTargets();
+	deleteOutputTexture();
+}
+
+bool GPUImageOutput::shouldSmoothlyScaleOutput() const
+{
+	return _shouldSmoothlyScaleOutput;
+}
+
+void GPUImageOutput::setShouldSmoothlyScaleOutput(bool smooth)
+{
+	_shouldSmoothlyScaleOutput = smooth;
+}
+
+bool GPUImageOutput::shouldIgnoreUpdatesToThisTarget() const
+{
+	return _shouldIgnoreUpdatesToThisTarget;
+}
+
+void GPUImageOutput::setShouldIgnoreUpdatesToThisTarget(bool ignore)
+{
+	_shouldIgnoreUpdatesToThisTarget = ignore;
+}
+
+GPUImageMovieWriter* GPUImageOutput::audioEncodingTarget() const
+{
+	return _audioEncodingTarget;
+}
+
+void GPUImageOutput::setAudioEncodingTarget(GPUImageMovieWriter* movieWriter)
+{
+	_audioEncodingTarget = movieWriter;
+}
+
+GPUImageInput& GPUImageOutput::targetToIgnoreForUpdates() const
+{
+	return *_targetToIgnoreForUpdates;
+}
+
+void GPUImageOutput::setTargetToIgnoreForUpdates(GPUImageInput& ignore)
+{
+	_targetToIgnoreForUpdates = &ignore;
+}
+
+GPUImageOutput::frameProcessingCompletionFunc GPUImageOutput::frameProcessingCompletionBlock() const
+{
+	return _frameProcessingCompletionBlock;
+}
+
+bool GPUImageOutput::enabled() const
+{
+	return _enabled;
+}
+
+void GPUImageOutput::setInputTextureForTarget(GPUImageInput& target, int inputTextureIndex)
+{
+	//TODO
+}
+
+GLuint GPUImageOutput::textureForOutput() const
+{
+	return outputTexture;
+}
+
+void GPUImageOutput::notifyTargetsAboutNewOutputTexture()
+{
+	//TODO
+}
+
+QListIterator<GPUImageInput*> GPUImageOutput::targets() const
+{
+	return QListIterator<GPUImageInput*>(_targets);
+}
+
+void GPUImageOutput::addTarget(GPUImageInput& newTarget)
+{
+	//TODO
+}
+
+void GPUImageOutput::addTarget(GPUImageInput& newTarget, int textureLocation)
+{
+	//TODO
+}
+
+void GPUImageOutput::removeTarget(GPUImageInput& targetToRemove)
+{
+	//TODO
+}
+
+void GPUImageOutput::removeAllTargets()
+{
+	//TODO
+}
+
+class InitializeOutputTexture_Runnable : public QRunnable
+{
+	GPUImageOutput* output;
+
+public:
+	InitializeOutputTexture_Runnable(GPUImageOutput* out){output=out;}
+
+	void run()
+	{
+		GPUImageOpenGLESContext::useImageProcessingContext();
+
+		glActiveTexture(GL_TEXTURE0);
+		glGenTextures(1, &(output->outputTexture));
+		glBindTexture(GL_TEXTURE_2D, output->outputTexture);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+		// This is necessary for non-power-of-two textures
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+		glBindTexture(GL_TEXTURE_2D, 0);
+	}
+};
+
+void GPUImageOutput::initializeOutputTexture()
+{
+	runSynchronouslyOnVideoProcessingQueue(new InitializeOutputTexture_Runnable(this));
+}
+
+void GPUImageOutput::deleteOutputTexture()
+{
+	//TODO
+}
+
+void GPUImageOutput::forceProcessingAtSize(const QSizeF&)
+{
+}
+
+void GPUImageOutput::forceProcessingAtSizeRespectingAspectRatio(const QSizeF&)
+{
+}
+
+//TODO

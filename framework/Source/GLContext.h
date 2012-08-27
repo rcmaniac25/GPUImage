@@ -44,7 +44,7 @@ public:
 	static bool setCurrentContext(const GLContext* context);
 
 	bool renderbufferStorage(EGLSurface surface);
-	bool presentRenderbuffer();
+	Q_INVOKABLE bool presentRenderbuffer();
 
 	GLenum api() const;
 	const GLSetup& getGLSetup() const;

@@ -5,7 +5,129 @@
 
 #include "GPUImageOpenGLESContext.h"
 
-//TODO
+__BEGIN_DECLS
+
+void runOnMainQueueWithoutDeadlocking(QRunnable* block);
+void runSynchronouslyOnVideoProcessingQueue(QRunnable* block);
+void report_memory(QString* tag);
+
+__END_DECLS
+
+class GPUImageMovieWriter;
+
+/** GPUImage's base source object
+
+ Images or frames of video are uploaded from source objects, which are subclasses of GPUImageOutput. These include:
+
+ - GPUImageVideoCamera (for live video from an iOS camera)
+ - GPUImageStillCamera (for taking photos with the camera)
+ - GPUImagePicture (for still images)
+ - GPUImageMovie (for movies)
+
+ Source objects upload still image frames to OpenGL ES as textures, then hand those textures off to the next objects in the processing chain.
+ */
+class GPUImageOutput : public QObject
+{
+	Q_OBJECT
+
+	Q_PROPERTY(bool shouldSmoothlyScaleOutput READ shouldSmoothlyScaleOutput WRITE setShouldSmoothlyScaleOutput FINAL)
+	Q_PROPERTY(bool shouldIgnoreUpdatesToThisTarget READ shouldIgnoreUpdatesToThisTarget WRITE setShouldIgnoreUpdatesToThisTarget FINAL)
+	Q_PROPERTY(GPUImageInput targetToIgnoreForUpdates READ targetToIgnoreForUpdates WRITE setTargetToIgnoreForUpdates FINAL)
+	Q_PROPERTY(bool enabled READ enabled FINAL)
+
+public:
+	typedef void (*frameProcessingCompletionFunc)(GPUImageOutput*,QTime&);
+
+	GPUImageOutput();
+	virtual ~GPUImageOutput();
+
+	//Properties
+	bool shouldSmoothlyScaleOutput() const;
+	void setShouldSmoothlyScaleOutput(bool smooth);
+	bool shouldIgnoreUpdatesToThisTarget() const;
+	void setShouldIgnoreUpdatesToThisTarget(bool ignore);
+	GPUImageMovieWriter* audioEncodingTarget() const;
+	void setAudioEncodingTarget(GPUImageMovieWriter* movieWriter);
+	GPUImageInput& targetToIgnoreForUpdates() const;
+	void setTargetToIgnoreForUpdates(GPUImageInput& ignore);
+	frameProcessingCompletionFunc frameProcessingCompletionBlock() const;
+	bool enabled() const;
+
+	//Managing targets
+	void setInputTextureForTarget(GPUImageInput& target, int inputTextureIndex);
+	GLuint textureForOutput() const;
+	void notifyTargetsAboutNewOutputTexture();
+
+	//Returns an array of the current targets.
+	QListIterator<GPUImageInput*> targets() const;
+
+	/**
+	 * @brief Adds a target to receive notifications when new frames are available.
+	 *
+	 * The target will be asked for its next available texture.
+	 *
+	 * @param newTarget Target to be added
+	 *
+	 * @seealso GPUImageInput.newFrameReadyAtTime
+	 */
+	void addTarget(GPUImageInput& newTarget);
+
+	/**
+	 * @brief Adds a target to receive notifications when new frames are available.
+	 *
+	 * @param newTarget Target to be added
+	 *
+	 * @seealso GPUImageInput.newFrameReadyAtTime
+	 */
+	void addTarget(GPUImageInput& newTarget, int textureLocation);
+
+	/**
+	 * @brief Removes a target. The target will no longer receive notifications when new frames are available.
+	 *
+	 * @param targetToRemove Target to be removed
+	 */
+	void removeTarget(GPUImageInput& targetToRemove);
+
+	/**
+	 * @brief Removes all targets.
+	 */
+	void removeAllTargets();
+
+	//Manage the output texture
+	void initializeOutputTexture();
+	void deleteOutputTexture();
+	void forceProcessingAtSize(const QSizeF& frameSize);
+	void forceProcessingAtSizeRespectingAspectRatio(const QSizeF& frameSize);
+
+	//Still image processing
+	//TODO
+
+	void prepareForImageCapture();
+
+protected:
+	QList<GPUImageInput*> _targets;
+	QList<int> targetTextureIndices;
+
+	GLuint outputTexture;
+	QSizeF inputTextureSize, cachedMaximumOutputSize, forcedMaximumSize;
+
+	bool overrideInputSize;
+
+private:
+	/*! @cond PRIVATE */
+	bool _shouldSmoothlyScaleOutput;
+	bool _shouldIgnoreUpdatesToThisTarget;
+	GPUImageMovieWriter* _audioEncodingTarget;
+	GPUImageInput* _targetToIgnoreForUpdates;
+	frameProcessingCompletionFunc _frameProcessingCompletionBlock;
+	bool _enabled;
+
+	friend class InitializeOutputTexture_Runnable;
+
+	Q_DISABLE_COPY(GPUImageOutput)
+	/*! @endcond */
+};
+QML_DECLARE_TYPE(GPUImageOutput)
 #endif
 #else
 #import <UIKit/UIKit.h>

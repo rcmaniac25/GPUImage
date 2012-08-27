@@ -132,6 +132,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageOpenGLESContext.h</locationURI>
 		</link>
 		<link>
+			<name>GPUImage/GPUImageOutput.cpp</name>
+			<type>1</type>
+			<location>C:/ndk-workspace/GPUImage/framework/Source/GPUImageOutput.cpp</location>
+		</link>
+		<link>
 			<name>GPUImage/GPUImageOutput.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageOutput.h</locationURI>
