@@ -8,6 +8,12 @@ http://www.sunsetlakesoftware.com
 
 contact@sunsetlakesoftware.com
 
+--
+
+Vincent Simonetti
+
+[@rcmaniac25](http://twitter.com/rcmaniac25)
+
 ## Overview ##
 
 The GPUImage framework is a BSD-licensed iOS library that lets you apply GPU-accelerated filters and other effects to images, live camera video, and movies. In comparison to Core Image (part of iOS 5.0), GPUImage allows you to write your own custom filters, supports deployment to iOS 4.0, and has a simpler interface. However, it currently lacks some of the more advanced features of Core Image, such as facial detection.

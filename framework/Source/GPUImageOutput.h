@@ -5,6 +5,9 @@
 
 #include "GPUImageOpenGLESContext.h"
 
+#include <bb/cascades/PixelBufferData>
+#include <bb/cascades/DisplayDirection>
+
 __BEGIN_DECLS
 
 void runOnMainQueueWithoutDeadlocking(QRunnable* block);
@@ -12,6 +15,8 @@ void runSynchronouslyOnVideoProcessingQueue(QRunnable* block);
 void report_memory(QString* tag);
 
 __END_DECLS
+
+using namespace bb::cascades;
 
 class GPUImageMovieWriter;
 
@@ -100,7 +105,31 @@ public:
 	void forceProcessingAtSizeRespectingAspectRatio(const QSizeF& frameSize);
 
 	//Still image processing
-	//TODO
+	/**
+	 * @brief Retrieves the currently processed image.
+	 */
+	PixelBufferData* imageFromCurrentlyProcessedOutput();
+	QImage* newQImageFromCurrentlyProcessedOutput();
+
+	/**
+	 * @brief Convenience method to retrieve the currently processed image with a different orientation.
+	 *
+	 * @param imageOrientation Orientation for image
+	 */
+	PixelBufferData* imageFromCurrentlyProcessedOutputWithOrientation(DisplayDirection::Type imageOrientation);
+	QImage* newQImageFromCurrentlyProcessedOutputWithOrientation(DisplayDirection::Type imageOrientation);
+
+	/**
+	 * @brief Convenience method to process an image with a filter.
+	 *
+	 * This method is useful for using filters on still images without building a full pipeline.
+	 *
+	 * @param imageToFilter Image to be filtered
+	 */
+	PixelBufferData* imageByFilteringImage(PixelBufferData* imageToFilter);
+	QImage* newQImageByFilteringImage(PixelBufferData* imageToFilter);
+	QImage* newQImageByFilteringQImage(QImage* imageToFilter);
+	QImage* newQImageByFilteringQImage(QImage* imageToFilter, DisplayDirection::Type orientation);
 
 	void prepareForImageCapture();
 
@@ -122,7 +151,11 @@ private:
 	frameProcessingCompletionFunc _frameProcessingCompletionBlock;
 	bool _enabled;
 
+	friend class AddTarget_Runnable;
+	friend class RemoveTarget_Runnable;
+	friend class RemoveAllTargets_Runnable;
 	friend class InitializeOutputTexture_Runnable;
+	friend class DeleteOutputTexture_Runnable;
 
 	Q_DISABLE_COPY(GPUImageOutput)
 	/*! @endcond */

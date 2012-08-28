@@ -97,14 +97,9 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>GPUImage/GLContext.cpp</name>
-			<type>1</type>
-			<location>C:/ndk-workspace/GPUImage/framework/Source/GLContext.cpp</location>
-		</link>
-		<link>
 			<name>GPUImage/GLContext.h</name>
 			<type>1</type>
-			<location>C:/ndk-workspace/GPUImage/framework/Source/GLContext.h</location>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GLContext.h</locationURI>
 		</link>
 		<link>
 			<name>GPUImage/GLProgram.cpp</name>
@@ -140,11 +135,6 @@
 			<name>GPUImage/GPUImageOutput.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageOutput.h</locationURI>
-		</link>
-		<link>
-			<name>GPUImage/GPUImageOutput.m</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageOutput.m</locationURI>
 		</link>
 		<link>
 			<name>GPUImage/Outputs</name>
@@ -272,14 +262,14 @@
 			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageRawDataOutput.m</locationURI>
 		</link>
 		<link>
+			<name>GPUImage/Outputs/GPUImageTextureOutput.cpp</name>
+			<type>1</type>
+			<location>C:/ndk-workspace/GPUImage/framework/Source/GPUImageTextureOutput.cpp</location>
+		</link>
+		<link>
 			<name>GPUImage/Outputs/GPUImageTextureOutput.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageTextureOutput.h</locationURI>
-		</link>
-		<link>
-			<name>GPUImage/Outputs/GPUImageTextureOutput.m</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageTextureOutput.m</locationURI>
 		</link>
 		<link>
 			<name>GPUImage/Outputs/GPUImageView.h</name>
