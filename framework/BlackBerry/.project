@@ -562,6 +562,26 @@
 			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageAmatorkaFilter.m</locationURI>
 		</link>
 		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageAverageColor.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageAverageColor.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageAverageColor.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageAverageColor.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageAverageLuminanceThresholdFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageAverageLuminanceThresholdFilter.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageAverageLuminanceThresholdFilter.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageAverageLuminanceThresholdFilter.m</locationURI>
+		</link>
+		<link>
 			<name>GPUImage/Filters/Color processing/GPUImageBrightnessFilter.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageBrightnessFilter.h</locationURI>
@@ -712,6 +732,16 @@
 			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageLuminanceThresholdFilter.m</locationURI>
 		</link>
 		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageLuminosity.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageLuminosity.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageLuminosity.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageLuminosity.m</locationURI>
+		</link>
+		<link>
 			<name>GPUImage/Filters/Color processing/GPUImageMissEtikateFilter.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageMissEtikateFilter.h</locationURI>
@@ -780,6 +810,16 @@
 			<name>GPUImage/Filters/Color processing/GPUImageSoftEleganceFilter.m</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSoftEleganceFilter.m</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageSolidColorGenerator.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSolidColorGenerator.h</locationURI>
+		</link>
+		<link>
+			<name>GPUImage/Filters/Color processing/GPUImageSolidColorGenerator.m</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Source/GPUImageSolidColorGenerator.m</locationURI>
 		</link>
 		<link>
 			<name>GPUImage/Filters/Color processing/GPUImageToneCurveFilter.h</name>

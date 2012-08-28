@@ -120,6 +120,10 @@
 #include "GPUImagePolkaDotFilter.h"
 #include "GPUImageLocalBinaryPatternFilter.h"
 #include "GPUImageLanczosResamplingFilter.h"
+#include "GPUImageAverageColor.h"
+#include "GPUImageSolidColorGenerator.h"
+#include "GPUImageLuminosity.h"
+#include "GPUImageAverageLuminanceThresholdFilter.h"
 #else
 #import "GLProgram.h"
 
@@ -242,4 +246,8 @@
 #import "GPUImagePolkaDotFilter.h"
 #import "GPUImageLocalBinaryPatternFilter.h"
 #import "GPUImageLanczosResamplingFilter.h"
+#import "GPUImageAverageColor.h"
+#import "GPUImageSolidColorGenerator.h"
+#import "GPUImageLuminosity.h"
+#import "GPUImageAverageLuminanceThresholdFilter.h"
 #endif

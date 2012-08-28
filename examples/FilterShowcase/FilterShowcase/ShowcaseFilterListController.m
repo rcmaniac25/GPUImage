@@ -84,8 +84,11 @@
 		case GPUIMAGE_HIGHLIGHTSHADOW: cell.textLabel.text = @"Highlights and shadows"; break;
 		case GPUIMAGE_HAZE: cell.textLabel.text = @"Haze"; break;
         case GPUIMAGE_HISTOGRAM: cell.textLabel.text = @"Histogram"; break;
+        case GPUIMAGE_AVERAGECOLOR: cell.textLabel.text = @"Average color"; break;
+        case GPUIMAGE_LUMINOSITY: cell.textLabel.text = @"Luminosity"; break;
 		case GPUIMAGE_THRESHOLD: cell.textLabel.text = @"Threshold"; break;
 		case GPUIMAGE_ADAPTIVETHRESHOLD: cell.textLabel.text = @"Adaptive threshold"; break;
+		case GPUIMAGE_AVERAGELUMINANCETHRESHOLD: cell.textLabel.text = @"Average luminance threshold"; break;
         case GPUIMAGE_CROP: cell.textLabel.text = @"Crop"; break;
         case GPUIMAGE_TRANSFORM: cell.textLabel.text = @"Transform (2-D)"; break;
         case GPUIMAGE_TRANSFORM3D: cell.textLabel.text = @"Transform (3-D)"; break;

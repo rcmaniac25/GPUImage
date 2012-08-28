@@ -312,6 +312,20 @@
             
             filter = [[GPUImageHazeFilter alloc] init];
         }; break;
+		case GPUIMAGE_AVERAGECOLOR:
+        {
+            self.title = @"Average Color";
+            self.filterSettingsSlider.hidden = YES;
+            
+            filter = [[GPUImageAverageColor alloc] init];
+        }; break;
+		case GPUIMAGE_LUMINOSITY:
+        {
+            self.title = @"Luminosity";
+            self.filterSettingsSlider.hidden = YES;
+            
+            filter = [[GPUImageLuminosity alloc] init];
+        }; break;
 		case GPUIMAGE_HISTOGRAM:
         {
             self.title = @"Histogram";
@@ -344,6 +358,17 @@
             [self.filterSettingsSlider setValue:1.0];
             
             filter = [[GPUImageAdaptiveThresholdFilter alloc] init];
+        }; break;
+		case GPUIMAGE_AVERAGELUMINANCETHRESHOLD:
+        {
+            self.title = @"Avg. Lum. Threshold";
+            self.filterSettingsSlider.hidden = NO;
+            
+            [self.filterSettingsSlider setMinimumValue:0.0];
+            [self.filterSettingsSlider setMaximumValue:2.0];
+            [self.filterSettingsSlider setValue:1.0];
+            
+            filter = [[GPUImageAverageLuminanceThresholdFilter alloc] init];
         }; break;
         case GPUIMAGE_CROP:
         {
@@ -1169,10 +1194,32 @@
             [blendFilter addTarget:filterView];
 
         }
-        else 
+        else if (filterType == GPUIMAGE_AVERAGECOLOR)
+        {
+            GPUImageSolidColorGenerator *colorGenerator = [[GPUImageSolidColorGenerator alloc] init];
+            [colorGenerator forceProcessingAtSize:[filterView sizeInPixels]];
+            
+            [(GPUImageAverageColor *)filter setColorAverageProcessingFinishedBlock:^(CGFloat redComponent, CGFloat greenComponent, CGFloat blueComponent, CGFloat alphaComponent, CMTime frameTime) {
+                [colorGenerator setColorRed:redComponent green:greenComponent blue:blueComponent alpha:alphaComponent];
+//                NSLog(@"Average color: %f, %f, %f, %f", redComponent, greenComponent, blueComponent, alphaComponent);
+            }];
+            
+            [colorGenerator addTarget:filterView];
+        }
+        else if (filterType == GPUIMAGE_LUMINOSITY)
+        {
+            GPUImageSolidColorGenerator *colorGenerator = [[GPUImageSolidColorGenerator alloc] init];
+            [colorGenerator forceProcessingAtSize:[filterView sizeInPixels]];
+            
+            [(GPUImageLuminosity *)filter setLuminosityProcessingFinishedBlock:^(CGFloat luminosity, CMTime frameTime) {
+                [colorGenerator setColorRed:luminosity green:luminosity blue:luminosity alpha:1.0];
+            }];
+            
+            [colorGenerator addTarget:filterView];
+        }
+        else
         {
             [filter addTarget:filterView];
-            
         }
     } 
 
@@ -1207,6 +1254,7 @@
         case GPUIMAGE_HAZE: [(GPUImageHazeFilter *)filter setDistance:[(UISlider *)sender value]]; break;
         case GPUIMAGE_THRESHOLD: [(GPUImageLuminanceThresholdFilter *)filter setThreshold:[(UISlider *)sender value]]; break;
         case GPUIMAGE_ADAPTIVETHRESHOLD: [(GPUImageAdaptiveThresholdFilter *)filter setBlurSize:[(UISlider*)sender value]]; break;
+        case GPUIMAGE_AVERAGELUMINANCETHRESHOLD: [(GPUImageAverageLuminanceThresholdFilter *)filter setThresholdMultiplier:[(UISlider *)sender value]]; break;
         case GPUIMAGE_DISSOLVE: [(GPUImageDissolveBlendFilter *)filter setMix:[(UISlider *)sender value]]; break;
         case GPUIMAGE_CHROMAKEY: [(GPUImageChromaKeyBlendFilter *)filter setThresholdSensitivity:[(UISlider *)sender value]]; break;
         case GPUIMAGE_KUWAHARA: [(GPUImageKuwaharaFilter *)filter setRadius:round([(UISlider *)sender value])]; break;
