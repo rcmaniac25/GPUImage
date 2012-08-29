@@ -1,3 +1,91 @@
+#if defined(Q_OS_BLACKBERRY)
+
+#ifndef GPUIMAGEFILTER_H
+#define GPUIMAGEFILTER_H
+
+#include "GPUImageOutput.h"
+
+#define STRINGIZE(x) #x
+#define STRINGIZE2(x) STRINGIZE(x)
+#define SHADER_STRING(text) STRINGIZE2(text)
+
+extern const QString* kGPUImageVertexShaderString;
+extern const QString* kGPUImagePassthroughFragmentShaderString;
+
+struct GPUVector4
+{
+    GLfloat one;
+    GLfloat two;
+    GLfloat three;
+    GLfloat four;
+};
+typedef struct GPUVector4 GPUVector4;
+
+struct GPUVector3
+{
+    GLfloat one;
+    GLfloat two;
+    GLfloat three;
+};
+typedef struct GPUVector3 GPUVector3;
+
+struct GPUMatrix4x4
+{
+    GPUVector4 one;
+    GPUVector4 two;
+    GPUVector4 three;
+    GPUVector4 four;
+};
+typedef struct GPUMatrix4x4 GPUMatrix4x4;
+
+struct GPUMatrix3x3
+{
+    GPUVector3 one;
+    GPUVector3 two;
+    GPUVector3 three;
+};
+typedef struct GPUMatrix3x3 GPUMatrix3x3;
+
+/**
+ * GPUImage's base filter class
+ *
+ * Filters and other subsequent elements in the chain conform to the GPUImageInput interface, which lets them take in the supplied or processed texture from the previous link in the chain and do something with it. Objects one step further down the chain are considered targets, and processing can be branched by adding multiple targets to a single output or filter.
+ */
+class GPUImageFilter : public GPUImageOutput//, public GPUImageInput
+{
+	Q_OBJECT
+	//Q_INTERFACES(GPUImageInput)
+
+public:
+	GPUImageFilter();
+	~GPUImageFilter();
+	//TODO
+
+protected:
+	GLuint filterSourceTexture;
+
+	GLuint filterFramebuffer;
+
+	GLProgram* filterProgram;
+	GLint filterPositionAttribute, filterTextureCoordinateAttribute;
+	GLint filterInputTextureUniform;
+	GLfloat backgroundColorRed, backgroundColorGreen, backgroundColorBlue, backgroundColorAlpha;
+
+	bool preparedToCaptureImage;
+
+	GLuint filterTextureCache;
+	PixelBufferData renderTarget;
+
+	QSizeF currentFilterSize;
+	GPUImageRotationMode inputRotation;
+
+private:
+	/*! @cond PRIVATE */
+	Q_DISABLE_COPY(GPUImageFilter)
+	/*! @endcond */
+};
+#endif
+#else
 #import "GPUImageOutput.h"
 
 #define STRINGIZE(x) #x
@@ -135,3 +223,4 @@ typedef struct GPUMatrix3x3 GPUMatrix3x3;
 - (void)setInteger:(GLint)intValue forUniform:(GLint)uniform program:(GLProgram *)shaderProgram;
 
 @end
+#endif
