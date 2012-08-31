@@ -1,37 +1,32 @@
 #include "GPUImageOutput.h"
 
-#include <QCoreApplication>
 #include <bb/cascades/OrientationSupport>
+
+#include <process.h>
+#include <malloc.h>
 
 __BEGIN_DECLS
 
+#define MAIN_THREAD_PID ((pid_t)1)
 void runOnMainQueueWithoutDeadlocking(QRunnable* block)
 {
-	if(QCoreApplication::instance())
+	if(getpid() == MAIN_THREAD_PID)
 	{
-		const QThread* thread = QCoreApplication::instance()->thread();
-		if(QThread::currentThread() == thread)
+		block->run();
+		if(block->autoDelete())
 		{
-			block->run();
-			if(block->autoDelete())
-			{
-				delete block;
-			}
-		}
-		else
-		{
-			//TODO: dispatch_sync(dispatch_get_main_queue(), block);
+			delete block;
 		}
 	}
 	else
 	{
-		//TODO: What should we do? There is no "application"
+		//TODO: dispatch_sync(dispatch_get_main_queue(), block);
 	}
 }
 
 void runSynchronouslyOnVideoProcessingQueue(QRunnable* block)
 {
-	const QThreadPool& videoProcessingQueue = GPUImageOpenGLESContext::sharedOpenGLESQueue();
+	QThreadPool& videoProcessingQueue = (QThreadPool&)GPUImageOpenGLESContext::sharedOpenGLESQueue();
 	//TODO
 	/*
 	if (dispatch_get_current_queue() == videoProcessingQueue)
@@ -39,34 +34,18 @@ void runSynchronouslyOnVideoProcessingQueue(QRunnable* block)
 		block();
 	}
 	else
-	{
-		dispatch_sync(videoProcessingQueue, block);
-	}
 	 */
+	{
+		videoProcessingQueue.start(block);
+	}
 }
 
 void report_memory(QString* tag)
 {
 	const QString& tags = tag ? *tag : "Default";
-	//TODO
-	/*
-	struct task_basic_info info;
+	struct mallinfo mi = mallinfo();
 
-    mach_msg_type_number_t size = sizeof(info);
-
-    kern_return_t kerr = task_info(mach_task_self(),
-
-                                   TASK_BASIC_INFO,
-
-                                   (task_info_t)&info,
-
-                                   &size);
-    if( kerr == KERN_SUCCESS ) {
-        NSLog(@"%@ - Memory used: %u", tag, info.resident_size); //in bytes
-    } else {
-        NSLog(@"%@ - Error: %s", tag, mach_error_string(kerr));
-    }
-	 */
+	qDebug() << QString("%1 - Memory used: %2").arg(tags).arg(mi.usmblks + mi.uordblks);
 }
 
 __END_DECLS
